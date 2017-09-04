@@ -134,7 +134,7 @@ public class ListaComArranjo {
 		return lstr + "]";
 	}
 
-	// retira uma determinada parte de um array de uma posicao até a outra
+	// retira uma determinada parte de um array de uma posicao atï¿½ a outra
 	public int[] sublist(int from, int to) {
 		int[] list = new int[to - from];
 		int cont = 0;
@@ -171,25 +171,21 @@ public class ListaComArranjo {
 	public void addIncreasingOrder(int element) {
 
 		if (count == 0) {
-
 			lista[0] = element;
-
-		} else if (element > lista[count -1]) {
-
+		} else if (element > lista[count - 1]) {
 			lista[count] = element;
-
 		} else {
-
 			for (int i = 0; i < count; i++) {
 				if (lista[i] > element) {
 					for (int j = count; j > i; j--) {
 						lista[j] = lista[j - 1];
 					}
 					lista[i] = element;
+					break;
 				}
 			}
 		}
-		count++;
+		count++;  // lugar certo?
 	}
 }
 

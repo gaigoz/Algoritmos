@@ -25,7 +25,7 @@ public class App {
         System.out.print(" Reverse = ");
         minhaLista.reverse();
         System.out.println(minhaLista);
-        System.out.println(" Add Increasing Order = ");
+        System.out.print(" Add Increasing Order = ");
         lista2.addIncreasingOrder(7);
         lista2.addIncreasingOrder(5);
         lista2.addIncreasingOrder(3);
