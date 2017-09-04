@@ -14,6 +14,10 @@ public class App {
         minhaLista.add(6);
         minhaLista.add(7);
        System.out.println(minhaLista+"\n");
+        
+         // int [] aux = L1.subList(1, 4);
+        // for(int i = 0 ; i < aux.length; i++){	
+        //	System.out.print(aux[i] + ",");
        
         
         System.out.print(" Sub-List = ");
