@@ -1,4 +1,5 @@
-package linkedList;
+package linkedList2;
+
 
 public class LinkedListOfInteger {
 
@@ -63,7 +64,6 @@ public class LinkedListOfInteger {
             n.next = head;
             head = n;
             if (tail == null) {
-            	System.out.println("printei");
                 tail = n;
             }
         } else if (index == count) { // insere no final
@@ -76,7 +76,7 @@ public class LinkedListOfInteger {
             }
             n.next = aux.next;
             aux.next = n;
-        }        
+        }
         count++;
     }
 

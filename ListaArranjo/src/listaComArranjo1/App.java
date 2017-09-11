@@ -14,6 +14,9 @@ public class App {
         minhaLista.add(6);
         minhaLista.add(7);
        System.out.println(minhaLista+"\n");
+       minhaLista.removeByIndex(2);
+       System.out.println(minhaLista+"\n");
+       
         
          // int [] aux = L1.subList(1, 4);
         // for(int i = 0 ; i < aux.length; i++){	
@@ -25,14 +28,19 @@ public class App {
         System.out.print(" Reverse = ");
         minhaLista.reverse();
         System.out.println(minhaLista);
-        System.out.print(" Add Increasing Order = ");
+        System.out.print(" Add Increasing Order = " );
         lista2.addIncreasingOrder(7);
         lista2.addIncreasingOrder(5);
         lista2.addIncreasingOrder(3);
         lista2.addIncreasingOrder(1);
         lista2.addIncreasingOrder(2);
         lista2.addIncreasingOrder(8);
+        lista2.addIncreasingOrder(4);
+        lista2.addIncreasingOrder(2);
+        lista2.addIncreasingOrder(2);
         System.out.print(lista2);
+        System.out.print("\n" + " Count Occurrences = " + lista2.countOccurrences(2));
+        
         
         
         

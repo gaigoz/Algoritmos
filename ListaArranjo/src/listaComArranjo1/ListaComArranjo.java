@@ -185,15 +185,24 @@ public class ListaComArranjo {
 				}
 			}
 		}
-		count++;  // lugar certo?
+		count++;
+	}
+
+	/*
+	 * 
+	 * 
+	 */
+	public int removeByIndex(int index) {
+
+		int aux = lista[index];
+		if (indiceValido(index)) {
+
+			for (int i = index; i < count - 1; i++) {
+				lista[i] = lista[i + 1];
+			}
+			count--;
+		}
+		return aux;
+
 	}
 }
-
-/*
- * 
- * 
- * 
- * int removeByIndex (int index )
- * 
- * 
- */
