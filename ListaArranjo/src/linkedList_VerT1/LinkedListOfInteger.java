@@ -324,23 +324,27 @@ public class LinkedListOfInteger {
 			if (aux.element % 2 == 0) {
 				v = true;
 				if (aux == head) {
+					
 					head = aux.next;
-					v = true;
+					if (count==1)
+						tail = null;
+					aux = aux.next;
 				} else if (aux == tail) {
 					tail = ant;
 					tail.next = null;
-					v = true;
+					aux = aux.next;
+
 				} else {
 					ant.next = aux.next;
-					v = true;
-				}
-
+					aux=aux.next;
+				}// botar aqui aux = aux.next;
+				count--;
 			} else {
-				v = false;
+				//v = false;
 				ant = aux;
 				aux = aux.next;
 			}
-			
+
 		}
 		return v;
 	}
